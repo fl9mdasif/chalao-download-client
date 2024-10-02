@@ -17,9 +17,9 @@ export function FacebookInput() {
   const placeholder1 = ["🔵 Paste Your Facebook video link"];
 
   const [facebookUrl, setFacebookUrl] = useState(""); // State to hold the input value
-  const [fbResponse, setFbResponse] = useState<FacebookDownloadResponse | null>(null) // State to hold the input value
+  const [fbResponse, setFbResponse] = useState<FacebookDownloadResponse | null>(null)
 
-  // const [facebookLinks, setFacebookLinks] = useState<FacebookDownloadLinks | null>(null); // State to hold the URLs
+
   const [loading, setLoading] = useState(false); // State to handle loading status
   const [downloadFacebook] = useDownloadFacebookMutation();
 
